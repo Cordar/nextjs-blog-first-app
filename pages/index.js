@@ -4,6 +4,7 @@ import utilStyles from "../styles/utils.module.css";
 
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
+import Date from "../components/date";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -22,7 +23,8 @@ const Home = ({ allPostsData }) => (
     <section className={utilStyles.headingMd}>
       <p>
         Hi, I'm Enric and I'm trying to learn nextjs so i can be productive in
-        my workplace and also make some websites for both my parents
+        my workplace and also make some websites for both my parents. I love
+        programming
       </p>
       <p>
         (This is a sample website - you’ll be building a site like this on{" "}
